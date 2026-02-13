@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>💰 مدیریت مالی شخصی</h1>
+
+    <div class="summary">
+      <div>
+        <h3>درآمد کل</h3>
+        <p id="total-income">0</p>
+      </div>
+      <div>
+        <h3>هزینه کل</h3>
+        <p id="total-expense">0</p>
+      </div>
+      <div>
+        <h3>موجودی</h3>
+        <p id="balance">0</p>
+      </div>
+    </div>
+
+    <form id="transaction-form">
+      <input type="text" id="description" placeholder="توضیحات" required>
+      <input type="number" id="amount" placeholder="مبلغ" required>
+      <select id="type">
+        <option value="income">درآمد</option>
+        <option value="expense">هزینه</option>
+      </select>
+      <button type="submit">اضافه کردن</button>
+    </form>
+
+    <ul id="transaction-list"></ul>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
